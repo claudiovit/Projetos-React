@@ -20,12 +20,21 @@
 
 Alguns projetos Feito e Alguns em Desenvolvimento 📚:
 
+- [x] 1_INTRO
+- [x] 2_FUNDAMENTOS
+- [x] 3_AVANCANDO_NO_REACT
+- [x] 4_CSS_REACT
 - [x] 5_FORM_EM_REACT
 - [x] 6_PROJETO_SECRET_WORD
+- [x] 7_REQ_HTTP_REACT
 - [x] 8_REACT_ROUTER
 - [x] 9_CONTEXT
 - [x] 10_MINIBLOG
+- [ ] 11_REACT_HOOKS
+- [ ] 12_REACTGRAM
+- [ ] 13_OUTRO_CURSO
 - [ ] 14_MYCONTACTS
+- [ ] 15_MY_SERIES
 
 ## 💻 Pré-requisitos
 
@@ -35,29 +44,28 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
 * Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando os Projetos e ☕ Usando o projeto
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Para instalar os projetos, siga estas etapas:
 
-Linux e macOS:
+Windows, Linux e macOS
 ```
-<comando_de_instalação>
-```
-
-Windows:
-```
-<comando_de_instalação>
+Leia o README.md que se encontrada detro da pasta de cada projeto
 ```
 
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
+os comando sao sempre os basico se mudar alguma coisa vai ter no Readme.md do Projeto
+comandos exempos
 
 ```
-<exemplo_de_uso>
+npm install
+```
+```
+npm start
+```
+```
+npm run build
 ```
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
 ## 📫 Contribuindo para <nome_do_projeto>
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
