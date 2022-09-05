@@ -56,22 +56,26 @@ Leia o README.md que se encontrada detro da pasta de cada projeto
 os comando sao sempre os basico se mudar alguma coisa vai ter no Readme.md do Projeto
 comandos exempos
 
+
+> Para instalar as dependencias
 ```
 npm install
 ```
+> Para iniciar o Projeto
 ```
 npm start
 ```
+> Compila o Projeto
 ```
 npm run build
 ```
 
 
-## 📫 Contribuindo para <nome_do_projeto>
+## 📫 Contribuindo para os Projetos
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
-Para contribuir com <nome_do_projeto>, siga estas etapas:
+Para contribuir com algum projeto, siga estas etapas:
 
-1. Bifurque este repositório.
+1. Bifurque o repositório do projeto que deseja.
 2. Crie um branch: `git checkout -b <nome_branch>`.
 3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
 4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
@@ -87,25 +91,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://pickaface.net/gallery/avatar/GreenArrow16456ffd6dd3675d.png" width="100px;" alt="Foto do Claudio Fiuza"/><br>
         <sub>
-          <b>Iuri Silva</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Mark Zuckerberg</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Steve Jobs</b>
+          <b>Claudio V. FIuza</b>
         </sub>
       </a>
     </td>
