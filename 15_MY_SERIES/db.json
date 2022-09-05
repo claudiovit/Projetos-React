@@ -1,0 +1,29 @@
+{
+  "series": {
+    "1660917842148": {
+      "name": "asdas",
+      "status": "ASSISTIDO",
+      "genre_id": 1660917583049,
+      "comments": "Massa",
+      "poster": "",
+      "background": ""
+    },
+    "1660917975286": {
+      "name": "Acesso",
+      "status": "PARA_ASSISTIR",
+      "genre_id": null,
+      "comments": "Bem Massa",
+      "poster": "//image.tmdb.org/t/p/original/vLV29IlGhn4opbyDiYGm7RHmdso.jpg",
+      "background": "//image.tmdb.org/t/p/originalnull"
+    }
+  },
+  "genres": {
+    "1660917583049": {
+      "name": "Ação"
+    },
+    "1660917589068": {
+      "name": "Comedia"
+    }
+  },
+  "count": 0
+}
