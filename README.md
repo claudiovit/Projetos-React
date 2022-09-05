@@ -10,8 +10,9 @@
 
 
 ### Ultimo Projeto Feito
+> MINI BLOG
 <img src="https://st2.depositphotos.com/4352269/48282/v/600/depositphotos_482825238-stock-illustration-react-js-javascript-modern-programming.jpg" alt="imagem projeto">
-* MINI BLOG
+
 
 > Alguns Projetos Feito em React, Todos os projetos feitos aqui foi tirado de algum curso em react.
 
