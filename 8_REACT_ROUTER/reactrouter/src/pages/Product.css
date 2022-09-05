@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+
+  h3 {
+    font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  }
+
+  .price {
+    margin-top: 5px;
+  }
+
+  .description {
+    margin-top: 5px;
+  }
+
+  .img {
+  width: 220px;
+  height: 250px;
+  border: 2px solid rgba(51, 50, 50, 0.616);
+  border-radius: 10px;
+  
+  
+  }

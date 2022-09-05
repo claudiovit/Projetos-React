@@ -1,0 +1,29 @@
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products li {
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    margin: 0 10px;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Links {
+    text-decoration: none;
+    color: #000;
+}
+.Detalhes {
+    text-decoration: none;
+    color: rgb(53, 52, 52);
+    border: 1px solid #e46565;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
