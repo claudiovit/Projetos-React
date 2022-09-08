@@ -1,0 +1,24 @@
+.dash {
+  text-align: center;
+}
+
+.dash h2 {
+  padding: 10px 25px;
+}
+
+.dash p {
+  margin-bottom: 1.5em;
+}
+
+
+.noposts {
+  text-align: center;
+}
+
+.noposts p {
+  margin-bottom: 1.5em;
+}
+
+.noposts a {
+  padding: 10px 25px;
+}

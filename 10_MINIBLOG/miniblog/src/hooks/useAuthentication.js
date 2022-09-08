@@ -1,5 +1,3 @@
-import { db } from "../firebase/config";
-
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -30,7 +28,6 @@ export const useAuthentication = () => {
     checkIfIsCancelled();
 
     setLoading(true);
-    setError(null);
 
     try {
       const { user } = createUserWithEmailAndPassword(
@@ -43,8 +40,6 @@ export const useAuthentication = () => {
         displayName: data.displayName,
       });
 
-      setLoading(false);
-
       return user;
     } catch (error) {
       console.log(error.message);
@@ -54,15 +49,16 @@ export const useAuthentication = () => {
 
       if (error.message.includes("Password")) {
         systemErrorMessages = "A senha deve ter no minimo 6 caracteres";
-      } else if (error.message.includes("email-alredy")) {
+      } else if (error.message.includes("email-already")) {
         systemErrorMessages = "Email ja cadastrado";
       } else {
         systemErrorMessages = "Ocorreu um erro, por favor tente mais tarde";
       }
 
-      setLoading(false);
       setError(systemErrorMessages);
     }
+
+    setLoading(false);
   };
 
   // Logout
@@ -80,9 +76,13 @@ export const useAuthentication = () => {
 
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      setLoading(false);
     } catch (error) {
+      console.log(error.message);
+      console.log(typeof error.message);
+      console.log(error.message.includes("user-not"));
+
       let systemErrorMessages;
+
       if (error.message.includes("user-not-found")) {
         systemErrorMessages = "Usuario não encontrado";
       } else if (error.message.includes("wrong-password")) {
@@ -91,9 +91,12 @@ export const useAuthentication = () => {
         systemErrorMessages = "Ocorreu um erro, por favor tente mais tarde";
       }
 
+      console.log(systemErrorMessages);
+
       setError(systemErrorMessages);
-      setLoading(false);
     }
+    console.log(error);
+    setLoading(false);
   };
 
   useEffect(() => {

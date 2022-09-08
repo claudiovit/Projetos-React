@@ -76,7 +76,7 @@ textarea {
 
 .btn.btn-dark {
   background-color: rgb(25, 86, 252);
-  border-radius: 0;
+  border-radius: 8px;
 }
 
 .btn.btn-outline {
