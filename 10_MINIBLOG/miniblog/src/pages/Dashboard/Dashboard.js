@@ -2,38 +2,59 @@ import { Link } from "react-router-dom";
 import styles from "./Dashboard.module.css";
 
 import { useAuthValue } from "../../context/AuthContext";
-import { useFetchDocumets } from "../../hooks/useFetchDocuments";
-
+import { useFetchDocuments } from "../../hooks/useFetchDocuments";
+import { useDeleteDocument } from "../../hooks/useDeleteDocument";
 
 const Dashboard = () => {
-  const {user} = useAuthValue();
+  const { user } = useAuthValue();
   const uid = user.uid;
 
-  const posts = [];
+  const { documents: posts, loading } = useFetchDocuments("posts", null, uid);
 
+  const { deleteDocument } = useDeleteDocument("posts");
 
-
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <div className={styles.dash}>
-      <h2>Dashboard</h2>
+    <div className={styles.dashbord}>
+      <h3>Dashboard</h3>
       <p>Gerencie os seus Posts</p>
       {posts && posts.length === 0 ? (
         <div className={styles.noposts}>
           <p>Não há posts</p>
-          <Link to="/posts/create" className="btn">Criar Primeiro Post</Link>
+          <Link to="/posts/create" className="btn">
+            Criar Primeiro Post
+          </Link>
         </div>
       ) : (
-        <div>
-          <p>Tem Posts!</p>
-          {/* {posts.map((post) => (
-            <div key={post.id}>
-              <h3>{post.title}</h3>
-              <p>{post.body}</p>
-              <Link to={`/edit/${post.id}`}>Editar</Link>
-            </div>
-          ))} */}
-        </div>
+        <>
+          <div className={styles.post_header}>
+            <span>Titulo</span>
+            <span>Ações</span>
+          </div>
+          {posts &&
+            posts.map((post) => (
+              <div key={post.id} className={styles.post_row}>
+                <p>{post.title}</p>
+                <div>
+                  <Link to={`/posts/${post.id}`} className="btn btn-outline">
+                    Ver
+                  </Link>
+                  <Link
+                    to={`/posts/edit/${post.id}`}
+                    className="btn btn-outline"
+                  >
+                    Editar
+                  </Link>
+                  <button onClick={() => deleteDocument(post.id)} className="btn btn-outline btn-danger">
+                    Excluir
+                  </button>
+                </div>
+              </div>
+            ))}
+        </>
       )}
     </div>
   );
